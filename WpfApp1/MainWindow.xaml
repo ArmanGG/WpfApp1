@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="frnum1" TextWrapping="Wrap" Margin="50,36,619,315" TextChanged="TextBox_TextChanged"/>
+        <TextBox Name="frden1" TextWrapping="Wrap" Margin="50,176,619,175" RenderTransformOrigin="0.614,1.93" TextChanged="frden1_TextChanged"/>
+        <TextBox Name="frnum2" TextWrapping="Wrap" Margin="269,36,400,315"/>
+        <TextBox Name="frden2" TextWrapping="Wrap" Margin="269,176,400,175"/>
+        <TextBox Name="frnum3" TextWrapping="Wrap" Margin="571,36,98,315"/>
+        <TextBox Name="frden3" TextWrapping="Wrap" Margin="571,176,98,175" TextChanged="frden3_TextChanged"/>
+        <ComboBox Name ="ComboBox" Margin="200,125,540,268" SelectionChanged="ComboBox_SelectionChanged">
+            <Label Content=""/>
+        </ComboBox>
+        <Label Content="=" Margin="467,125,277,268"/>
+        <Button Name="BtnClear" Content="Clear" Margin="269,317,400,31" Click="BtnClear_Click"/>
+        <Button Name="BtnCalc" Content="Calc" Margin="467,317,202,31" Click="BtnCalc_Click"/>
+
+    </Grid>
+</Window>
